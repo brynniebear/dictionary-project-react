@@ -1,33 +1,35 @@
 import React, { useState } from "react";
-import "./Dictionary.css";
 import axios from "axios";
+import "./Dictionary.css";
+import Results from "./Results";
 
 export default function Dictionary() {
-  const [searchTerm, setSearchTerm] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("contact");
+  const [definitionDetails, setDefinitionDetails] = useState(null);
   
 
   function handleResponse(response) {
-    console.log(response.data);
+    setDefinitionDetails(response.data);
+  }
+
+  function handleChange(event) {
+    setSearchTerm(event.target.value);
   }
 
   // documentation: https://dictionaryapi.dev/
-  function handleSearchTerm(event) {
-    setSearchTerm(event.target.value);
+  function search (event) {
+    event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchTerm}`;
 
     axios.get(apiUrl).then(handleResponse);
   }
 
-  function Search(event) {
-    event.preventDefault();
-    alert(`Searching for ${searchTerm}`);
-  }
-
   return (
   <div className="Dictionary">
-    <form onSubmit={Search}>
-      <input type="search" autoFocus={true} placeholder="What does it mean?" onChange={handleSearchTerm} />
+    <form onSubmit={search}>
+      <input type="search" autoFocus={true} placeholder="What does it mean?" onChange={handleChange} />
       <input type="submit" value="Find the definition" className="btn-dark"/>
     </form>
+    <Results details={definitionDetails} />
   </div>);
 }
