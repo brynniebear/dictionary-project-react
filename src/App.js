@@ -14,8 +14,7 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          Open-sourced code by {" "}
-          <a href="https://github.com/brynniebear/dictionary-project-react" target="_blank" rel="noreferrer">Brynn Williams</a>
+          <a href="https://github.com/brynniebear/dictionary-project-react" target="_blank" rel="noreferrer">Open-sourced code</a>{" "}by Brynn Williams
         </footer>
       </div>
     </div>
