@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Phonetics(props) {
-  console.log(props);
   return (
     <div className="Phonetics">
       {props.phoneticDetails.map(function (phonetics, index){
