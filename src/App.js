@@ -11,7 +11,7 @@ function App() {
           <h4>Search for a word</h4>
         </header>
         <main className="App-main">
-          <Dictionary defaultTerm="information" />
+          <Dictionary defaultTerm="fly" />
         </main>
         <footer className="App-footer">
           <a href="https://github.com/brynniebear/dictionary-project-react" target="_blank" rel="noreferrer">Open-sourced code</a>{" "}by Brynn Williams
