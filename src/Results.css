@@ -11,19 +11,8 @@
   margin-bottom: 0.5em;
 }
 
-.Phonetics a {
-  background-color: #ffffff;
-  color: #212529;
-  text-decoration: none;
-  padding: 0.2em 0.5em;
-  border: 1px solid #212529;
-  border-radius: 0.4em;
-  transition: all 150ms ease-in-out;
-}
-
-.Phonetics a:hover {
-  background-color: #212529;
-  color: #ffffff;
+.Phonetics figure {
+  display: block;
 }
 
 .phonetic-text {
