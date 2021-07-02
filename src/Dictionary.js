@@ -49,8 +49,8 @@ export default function Dictionary(props) {
   return (
   <div className="Dictionary">
     <form onSubmit={handleSubmit}>
-      <input type="search" autoFocus={true} placeholder="What does it mean?" onChange={handleChange} />
-      <input type="submit" value="Find the definition" className="btn-dark"/>
+      <input className="type-search" type="search" autoFocus={true} placeholder="What does it mean?" onChange={handleChange} />
+      <input className="btn-dark submit-button" type="submit" value="Find the definition"/>
     </form>
     <Results details={definitionDetails} />
     <Photos photoDetails={photos} photoAlt={searchTerm}/>

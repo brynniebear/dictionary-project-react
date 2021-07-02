@@ -1,0 +1,17 @@
+.definition {
+  margin-top: 0.8em;
+  padding-left: 1em;
+}
+
+.example,
+.synonyms {
+  padding-left: 2em;
+}
+
+.example {
+  opacity: 80%;
+}
+
+.synonyms {
+  opacity: 65%;
+}
