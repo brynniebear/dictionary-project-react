@@ -7,10 +7,10 @@ export default function Synonyms(props) {
         |{props.synonyms.map(function(synonym, index){
           return (
             <span key={index}>
-              |  {synonym}  |
+              {" "}{synonym}  |
             </span>
           );
-        })}|
+        })}
       </div>);} else {
       return null;
     }
