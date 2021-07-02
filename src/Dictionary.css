@@ -3,7 +3,7 @@
 }
 
 form {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 form input {
@@ -13,7 +13,7 @@ form input {
 
 form .type-search {
   border-radius: 0.2em;
-  width: 40%;
+  width: 50%;
 }
 
 form .submit-button {
